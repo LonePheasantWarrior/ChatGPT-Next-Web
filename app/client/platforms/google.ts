@@ -144,6 +144,7 @@ export class GeminiProApi implements LLMApi {
         topP: modelConfig.top_p,
         // "topK": modelConfig.top_k,
       },
+      // https://ai.google.dev/api/generate-content?hl=zh-cn#HarmBlockThreshold
       safetySettings: [
         {
           category: "HARM_CATEGORY_HARASSMENT",
