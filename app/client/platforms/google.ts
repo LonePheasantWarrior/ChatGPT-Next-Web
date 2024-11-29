@@ -147,19 +147,49 @@ export class GeminiProApi implements LLMApi {
       safetySettings: [
         {
           category: "HARM_CATEGORY_HARASSMENT",
-          threshold: "BLOCK_NONE",
+          threshold: "OFF",
         },
         {
           category: "HARM_CATEGORY_HATE_SPEECH",
-          threshold: "BLOCK_NONE",
+          threshold: "OFF",
         },
         {
           category: "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-          threshold: "BLOCK_NONE",
+          threshold: "OFF",
         },
         {
           category: "HARM_CATEGORY_DANGEROUS_CONTENT",
-          threshold: "BLOCK_NONE",
+          threshold: "OFF",
+        },
+
+          //增强设置
+        {
+          category: "HARM_CATEGORY_UNSPECIFIED",
+          threshold: "OFF",
+        },
+          {
+          category: "HARM_CATEGORY_DEROGATORY",
+          threshold: "OFF",
+        },
+          {
+          category: "HARM_CATEGORY_TOXICITY",
+          threshold: "OFF",
+        },
+          {
+          category: "HARM_CATEGORY_VIOLENCE",
+          threshold: "OFF",
+        },
+          {
+          category: "HARM_CATEGORY_SEXUAL",
+          threshold: "OFF",
+        },
+          {
+          category: "HARM_CATEGORY_MEDICAL",
+          threshold: "OFF",
+        },
+          {
+          category: "HARM_CATEGORY_DANGEROUS",
+          threshold: "OFF",
         },
       ],
     };
